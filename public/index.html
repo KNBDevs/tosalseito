@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>TO-SalseiTO</title>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3236150424852594"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <div>
+          <a class="titleLink" href="./index.html"
+            ><img src="./images/logo.png" alt="" /></a
+          ><br />
+          <img class="gnomo" src="./images/gnomo_logo.png" alt="" />
+        </div>
+        <div>
+          <p class="subtitleHeader">
+            Toda la actualidad, polémica y salseo de tus streamers y youtubers
+            favoritos, en un mismo lugar...
+          </p>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="nav-container">
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchText"
+            placeholder="Buscar por título..."
+          />
+          <input type="date" id="startDate" placeholder="Fecha mínima" />
+          <input type="date" id="endDate" placeholder="Fecha máxima" />
+          <button id="searchBtn">Buscar</button>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Videos</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Sobre mí</a>
+            <div class="dropdown-content">
+              <a href="./contact.html">Contacto</a>
+              <a href="./cookies.html">Política de Cookies</a>
+              <a href="./data_policy.html">Política de privacidad</a>
+              <a href="./about.html">Sobre el proyecto</a>
+            </div>
+          </li>
+        </ul>
+        <div class="burger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <p class="actualesP">Los más actuales...</p>
+    </div>
+    <section>
+      <div class="video-grid"></div>
+    </section>
+    <div>
+      <p class="antiguosP">Los más antiguos...</p>
+    </div>
+
+    <ins
+      class="adsbygoogle"
+      style="display: block"
+      data-ad-client="ca-pub-3236150424852594"
+      data-ad-slot="4922545532"
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="pagination">
+      <button id="firstPageBtn">|«</button>
+      <button id="prevThreePagesBtn">«</button>
+      <button id="prevPageBtn">←</button>
+      <span id="pageCounter">1 / X</span>
+      <button id="nextPageBtn">→</button>
+      <button id="nextThreePagesBtn">»</button>
+      <button id="lastPageBtn">»|</button>
+    </div>
+    <footer>
+      <p>
+        &copy; 2024<span
+          ><a class="linkspan" href="./index.html"> TO-SalseiTO.</a></span>
+        Todos los Derechos Reservados. Web by KNBDev.
+      </p>
+    </footer>
+    <button id="scrollToTopBtn">↑</button>
+    <button id="scrollToBottomBtn">↓</button>
+    <div id="videoPopup" class="video-popup">
+      <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <iframe
+          id="videoFrame"
+          width="800"
+          height="600"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>

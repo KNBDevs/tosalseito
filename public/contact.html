@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <title>TO-SalseiTO</title>
+        <link rel="stylesheet" href="./style.css">
+        <script defer src="./script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <div>
+                    <a class="titleLink" href="./index.html"><img src="./images/logo.png" alt=""></a><br>
+                    <img class="gnomo" src="./images/gnomo_logo.png" alt="">
+                </div>
+                <div>
+                    <p class="subtitleHeader">Toda la actualidad, polémica y salseo de tus streamers y youtubers favoritos, en un mismo lugar...</p>
+                </div>
+            </div>
+        </header>
+
+    <nav>
+        <div class="nav-container">
+            <div class="search-container">
+                <input type="text" id="searchText" placeholder="Buscar por título...">
+                <input type="date" id="startDate" placeholder="Fecha mínima">
+                <input type="date" id="endDate" placeholder="Fecha máxima">
+                <button id="searchBtn">Buscar</button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="#">Videos</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Sobre mí</a>
+                    <div class="dropdown-content">
+                        <a href="./contact.html">Contacto</a>
+                        <a href="./cookies.html">Política de Cookies</a>
+                        <a href="./data_policy.html">Política de privacidad</a>
+                        <a href="./about.html">Sobre el proyecto</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="burger-menu" id="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <form id="contactForm" action="https://formspree.io/f/mgvwwgnl" method="POST">
+            <label for="name">Nombre/Nick:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <div class="button-group">
+                <button type="submit" class="submitBtn">Enviar</button>
+                <button type="button" class="clearBtn" id="clearBtn">Limpiar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="mainpage">
+        <button id="mainpage_btn"><a href="./index.html"><i class="fa fa-home"></i></a></button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024<span><a class="linkspan" href="./index.html"> TO-SalseiTO.</a></span> Todos los Derechos Reservados. Web by KNBDev.</p>
+    </footer>
+
+    <button id="scrollToTopBtn">↑</button>
+    <button id="scrollToBottomBtn">↓</button>
+</body>
+</html>
